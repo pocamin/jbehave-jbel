@@ -6,7 +6,7 @@ import org.jbehave.jbel.JBelException;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class JBelScenarioEvaluatorTest {
+public class JBelScenarioEvaluatorBehaviour {
 
 	@Test
 	public void testExpressionProcessionScenario() throws IOException {
