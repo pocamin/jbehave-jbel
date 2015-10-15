@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jbehave</groupId>
 	<artifactId>jbehave-jbel</artifactId>
-	<version>0.1</version>
+	<version>0.2-SNAPSHOT</version>
 	<name>JBehave-jbel</name>
 	<description>JBehave JBEL is a project providing Expression languange written in javascript in jbehave story file</description>
 
@@ -301,7 +301,7 @@
 		<connection>scm:git:git://github.com/pocamin/jbehave-jbel.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/pocamin/jbehave-jbel.git</developerConnection>
 		<url>http://github.com/pocamin/jbehave-jbel.git</url>
-		<tag>jbehave-jbel-0.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 </project>
