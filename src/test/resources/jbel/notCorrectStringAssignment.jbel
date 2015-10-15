@@ -1,0 +1,3 @@
+Scenario: Text Processing scenario
+
+Given @Text="I'm not able to type correctly\"

@@ -1,0 +1,5 @@
+Scenario: Text Processing scenario
+
+Given I want to buy a new computer for @value=5 Euros
+When I give @money={5*5 + 4*2 + 2*1} Euros to the seller
+Then I will have @{money - value} Euros back

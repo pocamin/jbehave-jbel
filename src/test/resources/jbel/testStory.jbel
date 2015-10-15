@@ -1,0 +1,20 @@
+Story: a simple story
+
+Lifecycle:
+Before:
+Given I have @money=102 in my pocket
+
+Scenario: normal case
+When I buy @quantity=7 for @price=2 with extra taxes @taxes=50 %
+Then I have @{money-(quantity*price)*(100+taxes)/100} in my pocket
+
+Scenario: Free Taxe payment  !
+When I buy @quantity=10 for @price=7
+Then I have @{money-quantity*price} in my pocket
+
+Scenario: Overriding a header attribute !
+Given I have @money=10 in my pocket
+Then I have @{money} in my pocket
+
+Scenario: ...doesn't impact the next scenario
+Then I have @{money} in my pocket

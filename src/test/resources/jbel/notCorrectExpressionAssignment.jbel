@@ -1,0 +1,3 @@
+Scenario: not Correct Expression Evaluation
+
+Given @Text={ (function(){ return 4})() + x+7 {}

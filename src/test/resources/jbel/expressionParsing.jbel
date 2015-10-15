@@ -1,0 +1,4 @@
+Scenario: Expression Parsing
+
+Given you take version @version="v2"
+When You don't want to do that : @{ (function(){return {test:4}.test+2})()*5} but maybe that : @{ {v1:"Good version",v2:"Bad version"}[version]}

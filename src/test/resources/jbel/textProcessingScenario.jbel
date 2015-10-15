@@ -1,0 +1,5 @@
+Scenario: Text Processing scenario
+
+Given the user says "@text="My father used to say \"I like jBehave\"""
+When user is invited to talk
+then the user says "@{text.split('"')[1]}"

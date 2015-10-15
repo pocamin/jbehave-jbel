@@ -1,0 +1,5 @@
+Scenario: Expression processing scenario
+
+Given a user who has @amount=1000 on his account
+When he makes a trade of type @type="buy" for quantity @quantity=10 and unitPrice @unitPrice=2
+Then he has on his account @{amount + ((type=="buy")?-1:1) * quantity * unitPrice}
