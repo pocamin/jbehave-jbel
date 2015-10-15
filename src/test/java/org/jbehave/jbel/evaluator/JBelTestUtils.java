@@ -20,7 +20,7 @@ public class JBelTestUtils {
 	}
 
 	private static String readString(String name, String type) throws IOException {
-		InputStream s = JBelScenarioEvaluatorTest.class.getResourceAsStream("/" + type + "/" + name + '.' + type);
+		InputStream s = JBelScenarioEvaluatorBehaviour.class.getResourceAsStream("/" + type + "/" + name + '.' + type);
 		try {
 			java.util.Scanner scanner = new java.util.Scanner(s).useDelimiter("\\A");
 			return scanner.next();
